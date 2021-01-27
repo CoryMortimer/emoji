@@ -17,8 +17,8 @@ const App = () => {
 
   const closePopover = () => setIsOpen(false)
 
-  const onSelectEmoji = (event) => {
-    setSelectedEmoji(event.target.innerText)
+  const onSelectEmoji = (emoji) => {
+    setSelectedEmoji(emoji)
     closePopover()
   }
 

@@ -10,11 +10,11 @@ const useStyles = makeStyles({
   }
 })
 
-const EmojiButton = ({ children }) => {
+const EmojiButton = ({ onClick, children }) => {
   const { iconButton } = useStyles()
 
   return (
-    <button className={iconButton}>{children}</button>
+    <button onClick={onClick} className={iconButton}>{children}</button>
   )
 }
 
